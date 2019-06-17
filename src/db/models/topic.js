@@ -7,5 +7,5 @@ module.exports = (sequelize, DataTypes) => {
   Topics.associate = function(models) {
     // associations can be defined here
   };
-  return Topics;
-}; 
+  return Topic;
+};
