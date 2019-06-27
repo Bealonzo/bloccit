@@ -39,8 +39,6 @@ describe("routes : posts", () => {
     });
 
   });
-<<<<<<< HEAD
-=======
   describe("GET /topics/:topicId/posts/new", () => {
 
      it("should render a new post form", (done) => {
@@ -135,12 +133,9 @@ describe("routes : posts", () => {
        });
 
      });
->>>>>>> check3000
 
 });
 
-<<<<<<< HEAD
-=======
      it("should update the post with the given values", (done) => {
          const options = {
            url: `${base}/${this.topic.id}/posts/${this.post.id}/update`,
@@ -151,7 +146,6 @@ describe("routes : posts", () => {
          };
          request.post(options,
            (err, res, body) => {
->>>>>>> check3000
 
 describe("GET /topics/:topicId/posts/new", () => {
 
