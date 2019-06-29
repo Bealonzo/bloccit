@@ -55,20 +55,24 @@ describe("routes : topic", () => {
   });
 
   describe("POST /topics/create", () => {
-      const options = {
-        url: `${base}create`,
-        form: {
-          title: "blink-182 songs",
-          description: "What's your favorite blink-182 song?"
-        }
-      };
+
 
       it("should create a new topic and redirect", (done) => {
 
-//#1
+
+
+        const options = {
+          url: `${base}create`,
+          form: {
+            title: "blink-182 songs",
+            description: "What's your favorite blink-182 song?"
+          }
+        };
+
+
         request.post(options,
 
-//#2
+
           (err, res, body) => {
             Topic.findOne({where: {title: "blink-182 songs"}})
             .then((topic) => {
